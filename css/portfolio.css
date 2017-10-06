@@ -1,0 +1,122 @@
+html, body { overflow-x: hidden; }
+
+[class*='col-'] {
+  margin-bottom: 20px;
+}
+
+.pt {
+  padding-top: 20px;
+}
+
+.pb {
+  padding-bottom: 20px;
+}
+
+.navbar {
+  background-color: #0087ce;
+  color: white;
+  min-height: 80px;
+}
+
+.navbar ul {
+  width: 75%;
+}
+
+.navbar-nav li a {
+  color: #fff !important;
+  font-weight: 900;
+  font-family: 'Delius Unicase', cursive;
+}
+
+.navbar-nav a:hover {
+  color: black !important;
+}
+
+.about-me {
+  background: #F1F5F6 url('https://www.boxclever.ca/public/img/grey_bg.jpg') left top repeat;
+  padding-top: 110px;
+}
+
+.about-me h4 {
+  font-family: 'Handlee', cursive;
+}
+
+.about-me img {
+  max-width: 50%;
+}
+
+.my-projects {
+  background: url('https://www.boxclever.ca/public/img/logo_pattern.jpg') left top repeat;
+}
+
+.my-projects h1 {
+  font-family: 'Berkshire Swash', cursive;
+  font-weight: bold;
+}
+
+.my-projects img {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.my-projects h3 {
+  background-color: #001f22;
+  display: inline;
+  font-weight: 700;
+  font-family: 'Handlee', cursive;
+  font-size: 80%;
+}
+
+.links {
+  background-color: #D1D8DE;
+}
+
+.links h1 {
+  font-family: 'Berkshire Swash', cursive;
+  font-weight: bold;
+}
+
+.links img {
+  max-width: 60px;
+}
+
+.contact-me {
+  background: #F1F5F6 url('https://www.boxclever.ca/public/img/grey_bg.jpg') left top repeat;
+}
+
+.contact-me h1 {
+  font-family: 'Berkshire Swash', cursive;
+  font-weight: bold;
+}
+
+.contact-me img {
+  max-width: 60px;
+  margin-bottom: 8%;
+}
+
+.contact-me img:hover {
+  cursor: pointer;
+}
+
+.contact-me p {
+  display: none;
+  font-family: 'Handlee', cursive;
+}
+
+@media (min-width: 768px) {
+  .about-me img {
+    max-width: 40%;
+  }
+
+  .links img {
+    max-width: 70px;
+  }
+
+  .contact-me img {
+    max-width: 70px;
+  }
+
+  .my-projects h3 {
+    font-size: 175%;
+  }
+}
