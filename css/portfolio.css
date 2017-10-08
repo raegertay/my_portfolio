@@ -13,8 +13,7 @@ html, body { overflow-x: hidden; }
 }
 
 .navbar {
-  background-color: #0087ce;
-  color: white;
+  background-color: rgba(0, 135, 206, 0);
   min-height: 80px;
 }
 
@@ -22,19 +21,40 @@ html, body { overflow-x: hidden; }
   width: 75%;
 }
 
-.navbar-nav li a {
-  color: #fff !important;
+.navbar .navbar-nav .nav-link {
+  color: rgba(0, 135, 206, 1);
   font-weight: 900;
   font-family: 'Delius Unicase', cursive;
+  transition: color .5s;
 }
 
-.navbar-nav a:hover {
+.navbar .navbar-nav .nav-link:hover {
   color: black !important;
+}
+
+.quotes {
+  background-image: url('../resources/clouds_bg.jpg');
+  background-size: cover;
+  height: 500px;
+}
+
+.quotes .blockquote p {
+  white-space: pre-wrap;
+  font-family: 'Handlee', cursive;
+  font-size: 120%;
+}
+
+.quotes .blockquote footer {
+  font-family: 'Berkshire Swash', cursive;
+}
+
+.section-title {
+  font-family: 'Berkshire Swash', cursive;
+  font-weight: bold;
 }
 
 .about-me {
   background: #F1F5F6 url('https://www.boxclever.ca/public/img/grey_bg.jpg') left top repeat;
-  padding-top: 110px;
 }
 
 .about-me h4 {
@@ -47,11 +67,6 @@ html, body { overflow-x: hidden; }
 
 .my-projects {
   background: url('https://www.boxclever.ca/public/img/logo_pattern.jpg') left top repeat;
-}
-
-.my-projects h1 {
-  font-family: 'Berkshire Swash', cursive;
-  font-weight: bold;
 }
 
 .my-projects img {
@@ -71,11 +86,6 @@ html, body { overflow-x: hidden; }
   background-color: #D1D8DE;
 }
 
-.links h1 {
-  font-family: 'Berkshire Swash', cursive;
-  font-weight: bold;
-}
-
 .links img {
   max-width: 60px;
 }
@@ -84,18 +94,15 @@ html, body { overflow-x: hidden; }
   background: #F1F5F6 url('https://www.boxclever.ca/public/img/grey_bg.jpg') left top repeat;
 }
 
-.contact-me h1 {
-  font-family: 'Berkshire Swash', cursive;
-  font-weight: bold;
-}
-
-.contact-me img {
+.contact-me svg {
   max-width: 60px;
   margin-bottom: 8%;
+  transition: fill .5s;
 }
 
-.contact-me img:hover {
+.contact-me svg:hover  {
   cursor: pointer;
+  fill: #0087ce;
 }
 
 .contact-me p {
@@ -112,7 +119,7 @@ html, body { overflow-x: hidden; }
     max-width: 70px;
   }
 
-  .contact-me img {
+  .contact-me svg {
     max-width: 70px;
   }
 

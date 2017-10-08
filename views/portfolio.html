@@ -9,51 +9,70 @@
   crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/color/jquery.color-2.1.2.js" integrity="sha256-1Cn7TdfHiMcEbTuku97ZRSGt2b3SvZftEIn68UMgHC8=" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Delius+Unicase:700|Handlee" rel="stylesheet">
   <link href='../css/portfolio.css' rel='stylesheet' type='text/css' />
   <script src='../javascripts/portfolio.js'></script>
+  <title>My Portfolio</title>
+  <link rel="shortcut icon" href='../resources/programmer.ico' />
 </head>
 
 <body>
-
-  <!-- Navigation Bar -->
-  <nav class="navbar fixed-top navbar-expand-md navbar-dark">
-    <div class="container">
-      <div class='navbar-brand'></div>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-        <ul class="navbar-nav justify-content-around">
-          <li class="nav-item">
-            <a class="nav-link nav-link-about-me" href='#'>ABOUT ME</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link nav-link-my-projects" href="#">MY PROJECTS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link nav-link-links" href="#">LINKS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link nav-link-contact-me" href="#">CONTACT ME</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
   <div class='container-fluid'>
 
+    <!-- Navigation Bar-->
+    <nav class="navbar fixed-top navbar-expand-md navbar-light">
+      <div class="container">
+        <div class='navbar-brand'></div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+          <ul class="navbar-nav justify-content-around">
+            <li class="nav-item">
+              <a class="nav-link nav-link-home" href='#' data-toggle="collapse" data-target=".navbar-collapse.show">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-about-me" href='#' data-toggle="collapse" data-target=".navbar-collapse.show">ABOUT ME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-my-projects" href="#" data-toggle="collapse" data-target=".navbar-collapse.show">MY PROJECTS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-links" href="#" data-toggle="collapse" data-target=".navbar-collapse.show">LINKS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-contact-me" href="#" data-toggle="collapse" data-target=".navbar-collapse.show">CONTACT ME</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Quotes -->
+    <div class='quotes row justify-content-center'>
+      <div class='col-10 col-md-6 text-center d-flex align-items-center justify-content-center'>
+        <blockquote class="blockquote">
+          <p class='mb-0'>Stay hungry.<br />Stay foolish.</p>
+          <footer class="blockquote-footer">Steve Jobs</footer>
+        </blockquote>
+      </div>
+    </div>
+
     <!-- About Me -->
-    <div class='about-me row'>
+    <div class='about-me row pt'>
+      <!-- About Me - Title -->
+      <div class='col-12'>
+        <h1 class='section-title text-center'>About Me</h1>
+      </div>
       <!-- About Me - Content -->
       <div class='row justify-content-center'>
         <div class='col-10 col-md-5 text-center'>
           <img src='../resources/programmer.svg' class='img-fluid' alt='programmer' />
         </div>
         <div class='col-10 col-md-5 d-flex text-left justify-content-center align-items-center'>
-          <h4>Aspiring Web Developer. Current student of ALPHA Camp's Web Full Stack Development course. Technology stack includes HTML/CSS/JS, Bootstrap 4, Ruby on Rails &amp; PostgreSQL.</h4>
+          <h4>My name is Raeger. I am a full stack web developer. Technology and coding are my passion. Currently a student of ALPHA Camp's Web Full Stack Development bootcamp. My technology stack includes HTML/CSS/JS, Bootstrap 4, Ruby on Rails &amp; PostgreSQL.</h4>
         </div>
       </div>
     </div>
@@ -62,7 +81,7 @@
     <div class='my-projects row pt'>
       <!-- My Projects - Title -->
       <div class='col-12'>
-        <h1 class='text-center'>My Projects</h1>
+        <h1 class='section-title text-center'>My Projects</h1>
       </div>
       <div class='row justify-content-center'>
         <div class='col-md-8'>
@@ -99,6 +118,7 @@
       </div>
     </div>
 
+    <!-- Modals -->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
@@ -120,7 +140,7 @@
         <!-- Links -->
         <div class='links row justify-content-center text-center pt pb'>
           <div class='col-12'>
-            <h1>Links</h1>
+            <h1 class='section-title'>Links</h1>
           </div>
           <div class='col-4 col-md-4'>
             <a href='https://github.com/raegertay' target="_blank"><img src='../resources/github-logo.svg' class='links-logo img-fluid' alt='' /></a>
@@ -138,14 +158,14 @@
         <!-- Contact Me -->
         <div class='contact-me row justify-content-center text-center pt pb'>
           <div class='col-12'>
-            <h1 class='text-center'>Contact Me</h1>
+            <h1 class='section-title'>Contact Me</h1>
           </div>
           <div class='col-4 col-md-4'>
-            <img src='../resources/email-logo.svg' class='contact-me-logo img-fluid' alt='' />
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300"><path d="M150 0C67.2 0 0 67.2 0 150c0 82.8 67.2 150 150 150s150-67.2 150-150C300 67.2 232.8 0 150 0zM150 52.7l88.8 55.4H61.2L150 52.7zM239.9 196.4h0c0 8.9-7.2 16.1-16.1 16.1H76.2c-8.9 0-16.1-7.2-16.1-16.1v-84.9c0-0.9 0.1-1.9 0.3-2.7l84.8 52.9c0.1 0.1 0.2 0.1 0.3 0.2 0.1 0.1 0.2 0.1 0.3 0.2 0.6 0.3 1.2 0.6 1.8 0.7 0.1 0 0.1 0 0.2 0 0.7 0.2 1.4 0.3 2.1 0.3h0c0 0 0 0 0 0 0.7 0 1.4-0.1 2.1-0.3 0.1 0 0.1 0 0.2 0 0.6-0.2 1.2-0.4 1.8-0.7 0.1-0.1 0.2-0.1 0.3-0.2 0.1-0.1 0.2-0.1 0.3-0.2l84.8-52.9c0.2 0.9 0.3 1.8 0.3 2.7V196.4z"/></svg>
             <p>raegertay89@gmail.com</p>
           </div>
           <div class='col-4 col-md-4'>
-            <img src='../resources/phone-logo.svg' class='contact-me-logo img-fluid' alt='' />
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300"><circle cx="150" cy="226.1" r="11.7"/><path d="M182.7 68.2h-65.4c-3.7 0-6.6 2.8-6.6 6.3v123.6c0 3.5 3 6.3 6.6 6.3h65.4c3.7 0 6.6-2.8 6.6-6.3V74.6C189.3 71.1 186.4 68.2 182.7 68.2z"/><path d="M150 0C67.2 0 0 67.2 0 150S67.2 300 150 300s150-67.2 150-150S232.8 0 150 0zM208.4 224c0 11.5-9.3 20.7-20.7 20.7h-75.2c-11.5 0-20.7-9.3-20.7-20.7V75.3c0-11.5 9.3-20.7 20.7-20.7h75.2c11.5 0 20.7 9.3 20.7 20.7V224z"/></svg>
             <p>9726 2356</p>
           </div>
         </div>
