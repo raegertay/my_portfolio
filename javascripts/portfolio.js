@@ -6,7 +6,7 @@ $(document).ready(function() {
   var navbarColor;
   var isTransparent = true;
   $(window).scroll(function() {
-    if ($('html, body').scrollTop() > $(".about-me").offset().top && isTransparent) {
+    if ($('html, body').scrollTop() >= ($(".about-me").offset().top) && isTransparent) {
       isTransparent = false;
       // console.log("Blue");
       navbarColor = $.Color( navbar.css('backgroundColor') );
@@ -24,7 +24,8 @@ $(document).ready(function() {
   });
 
   // Scoll animations for links in navbar
-  var offset = parseInt(navbar.css('min-height'));
+  // var offset = parseInt(navbar.css('min-height'));
+  var offset = 0;
   $(".nav-link-home").click(function() {
     $('html, body').animate({
       scrollTop: 0

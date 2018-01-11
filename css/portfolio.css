@@ -1,4 +1,8 @@
-html, body { overflow-x: hidden; }
+/*Global*/
+html, body {
+  width: 100vw;
+  overflow-x: hidden;
+}
 
 [class*='col-'] {
   margin-bottom: 20px;
@@ -12,6 +16,12 @@ html, body { overflow-x: hidden; }
   padding-bottom: 20px;
 }
 
+h1.section-title {
+  font-family: 'Berkshire Swash', cursive;
+  font-weight: bold;
+}
+
+/*Navbar*/
 .navbar {
   background-color: rgba(0, 135, 206, 0);
   min-height: 80px;
@@ -32,10 +42,11 @@ html, body { overflow-x: hidden; }
   color: black !important;
 }
 
+/*Quotes section*/
 .quotes {
   background-image: url('../resources/clouds_bg.jpg');
   background-size: cover;
-  height: 500px;
+  height: 100vh;
 }
 
 .quotes .blockquote p {
@@ -48,12 +59,9 @@ html, body { overflow-x: hidden; }
   font-family: 'Berkshire Swash', cursive;
 }
 
-.section-title {
-  font-family: 'Berkshire Swash', cursive;
-  font-weight: bold;
-}
-
+/*About Me section*/
 .about-me {
+  height: 100vh;
   background: #F1F5F6 url('https://www.boxclever.ca/public/img/grey_bg.jpg') left top repeat;
 }
 
@@ -65,23 +73,12 @@ html, body { overflow-x: hidden; }
   max-width: 50%;
 }
 
+/*My Projects section*/
 .my-projects {
   background: url('https://www.boxclever.ca/public/img/logo_pattern.jpg') left top repeat;
 }
 
-.my-projects img {
-  opacity: 0.8;
-  cursor: pointer;
-}
-
-.my-projects h3 {
-  background-color: #001f22;
-  display: inline;
-  font-weight: 700;
-  font-family: 'Handlee', cursive;
-  font-size: 80%;
-}
-
+/*Links section*/
 .links {
   background-color: #D1D8DE;
 }
@@ -90,6 +87,7 @@ html, body { overflow-x: hidden; }
   max-width: 60px;
 }
 
+/*Contact Me section*/
 .contact-me {
   background: #F1F5F6 url('https://www.boxclever.ca/public/img/grey_bg.jpg') left top repeat;
 }
@@ -110,6 +108,7 @@ html, body { overflow-x: hidden; }
   font-family: 'Handlee', cursive;
 }
 
+/*For medium size device*/
 @media (min-width: 768px) {
   .about-me img {
     max-width: 40%;
@@ -121,9 +120,5 @@ html, body { overflow-x: hidden; }
 
   .contact-me svg {
     max-width: 70px;
-  }
-
-  .my-projects h3 {
-    font-size: 175%;
   }
 }
